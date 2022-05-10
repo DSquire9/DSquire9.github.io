@@ -7,7 +7,7 @@ template.innerHTML = `
 <nav class="navbar has-shadow is-white">
         <!-- logo / brand -->
         <div class="navbar-brand">
-          <a class="navbar-item" href="home.html">
+          <a class="navbar-item" href="index.html">
           <figure class="image">
             <img class="is-rounded" src="">
           </figure>
