@@ -36,7 +36,7 @@ template.innerHTML = `
             </div>
         </div>
         <hr>
-        &copy; 2022 Dan Squire
+        &copy; 2024 Dan Squire
     </footer>
 `;
 
