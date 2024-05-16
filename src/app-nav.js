@@ -25,20 +25,16 @@ template.innerHTML = `
               Home
             </a>
           
-            <a class="navbar-item is-hoverable" href="web.html" id="web">
-              Web Dev
-            </a>
-          
-            <a class="navbar-item is-hoverable" href="csharp.html" id="csharp">
-              C#
-            </a>
-
-            <a class="navbar-item is-hoverable" href="cpp.html" id="cpp">
-              C++
+            <a class="navbar-item is-hoverable" href="development.html" id="development">
+            Development
             </a>
           
             <a class="navbar-item is-hoverable" href="design.html" id="design">
               Design
+            </a>
+
+            <a class="navbar-item is-hoverable" href="links.html" id="links">
+              Links
             </a>
           </div> <!-- end navbar-start -->
         </div>
@@ -76,30 +72,25 @@ class AppNav extends HTMLElement{
       const page = this.getAttribute('data-page');
 
       this.home = this.shadowRoot.querySelector("#home");
-      this.web = this.shadowRoot.querySelector("#web");
-      this.csharp = this.shadowRoot.querySelector("#csharp");
-      this.cpp = this.shadowRoot.querySelector("#cpp");
+      this.development = this.shadowRoot.querySelector("#development");
       this.design = this.shadowRoot.querySelector("#design");
+      this.links = this.shadowRoot.querySelector("#links");
 
       if (page == "home") {
         this.home.classList.add("has-text-light");
         this.home.classList.add("has-background-primary");
       }
-      else if (page == "web") {
-        this.web.classList.add("has-text-light");
-        this.web.classList.add("has-background-primary");
-      }
-      else if (page == "csharp") {
-        this.csharp.classList.add("has-text-light");
-        this.csharp.classList.add("has-background-primary");
-      }
-      else if (page == "cpp") {
-        this.cpp.classList.add("has-text-light");
-        this.cpp.classList.add("has-background-primary");
+      else if (page == "development") {
+        this.development.classList.add("has-text-light");
+        this.development.classList.add("has-background-primary");
       }
       else if (page == "design") {
         this.design.classList.add("has-text-light");
         this.design.classList.add("has-background-primary");
+      }
+      else if (page == "links") {
+        this.links.classList.add("has-text-light");
+        this.links.classList.add("has-background-primary");
       }
       
     }
