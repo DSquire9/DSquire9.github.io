@@ -33,8 +33,20 @@ template.innerHTML = `
               Design
             </a>
 
-            <a class="navbar-item is-hoverable" href="links.html" id="links">
-              Links
+            <a class="navbar-item is-hoverable" href="https://github.com/DSquire9" target="_blank">
+              <img src="images/github-mark.png" alt="GitHub">
+            </a>
+
+            <a class="navbar-item is-hoverable" href="https://www.linkedin.com/in/dan-squire/" target="_blank">
+              <img src="images/linkedin.png" alt="LinkedIn">
+            </a>
+
+            <a class="navbar-item is-hoverable" href="https://www.hackerrank.com/profile/dsquire91301" target="_blank">
+              <img src="images/HackerRank_Icon.png" alt="HackerRank">
+            </a>
+
+            <a class="navbar-item is-hoverable" href="https://leetcode.com/u/DSquireDev/" target="_blank">
+              <img src="images/leetcode.png" alt="LeetCode">
             </a>
           </div> <!-- end navbar-start -->
         </div>
@@ -74,7 +86,6 @@ class AppNav extends HTMLElement{
       this.home = this.shadowRoot.querySelector("#home");
       this.development = this.shadowRoot.querySelector("#development");
       this.design = this.shadowRoot.querySelector("#design");
-      this.links = this.shadowRoot.querySelector("#links");
 
       if (page == "home") {
         this.home.classList.add("has-text-light");
@@ -87,10 +98,6 @@ class AppNav extends HTMLElement{
       else if (page == "design") {
         this.design.classList.add("has-text-light");
         this.design.classList.add("has-background-primary");
-      }
-      else if (page == "links") {
-        this.links.classList.add("has-text-light");
-        this.links.classList.add("has-background-primary");
       }
       
     }
